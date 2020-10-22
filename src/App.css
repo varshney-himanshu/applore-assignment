@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100%;
+}
+.form {
+  width: 60%;
+  /* text-align: center; */
+  background: lightgray;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+label {
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+input {
+  border-radius: 4px;
+  /* margin-top: 10; */
+  padding: 3px;
+  padding-left: 6px;
+  backgound: white;
+  border: 1px solid darkgray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-large {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input-exp-month {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.input-exp-year {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.input-cvv {
+  width: 110px;
+}
+.button {
+  width: 100%;
+  border: none;
+  background-color: #625261;
+  padding: 4px 8px;
+  color: white;
+  text-transform: uppercase !important;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px !important;
+  margin-top: 20px;
+}
+.row {
+  height: 100%;
+  width: 100%;
+  margin: auto !important;
+}
+
+.left-section {
+  /* background-color: #bedbbb; */
+  height: 100%;
+}
+
+.navbar {
+  background-color: #625261;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.transaction-card {
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-card div {
+  width: 33%;
+  /* margin-right: 30px; */
+}
+
+.transaction-card span {
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+.transactions {
+  margin: auto;
+  width: 100%;
+  height: 550px;
+  overflow-y: scroll;
+  background-color: #413740;
+  padding: 10px;
+}
+
+.heading-primary {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  color: #625261;
+}
+
+.login {
+  background-color: #625261;
+  height: 100vh;
+}
+
+.login-form {
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: white; */
+}
+
+.login-form button {
+  width: 100%;
+  border: none;
+  background-color: #625261;
+  padding: 4px 8px;
+  color: #625261;
+  text-transform: uppercase !important;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px !important;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.login-form input {
+  width: 100%;
+}
+
+#recaptcha {
+  margin-top: 10px;
+}
+
+.logout {
+  /* width: 100%; */
+  border: none;
+  background-color: #625261;
+  padding: 4px 8px;
+  color: #625261;
+  text-transform: uppercase !important;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px !important;
+
+  background-color: white;
+}
+
+.no-recent-transactions {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
 }
